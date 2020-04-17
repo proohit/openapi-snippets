@@ -1,0 +1,92 @@
+{
+    "schema Object": {
+      "prefix": "schemaObject",
+      "body": [
+        "\"${1:SCHEMANAME}\": {",
+        "\t\"title\": \"$2\",",
+        "\t\"type\": \"$3\",",
+        "\t\"description\": \"$4\",",
+        "\t\"properties\": {",
+        "\t\t\"${5:PROPERTY}\": {",
+        "\t\t\t$6",
+        "\t\t}",
+        "\t}",
+        "}"
+      ]
+    },
+    "property Object": {
+      "prefix": "propertyObject",
+      "body": [
+        "\"${1:PropertyName}\": {",
+        "\t\"type\": \"$2\",",
+        "\t\"description\": \"$3\",",
+        "\t\"example\": \"$4\"",
+        "}"
+      ]
+    },
+    "path GET": {
+      "prefix": "pathget",
+      "body": [
+        "\"get\": {",
+        "\t\"tags\": [\"$1\"],",
+        "\t\"description\": \"$2\",",
+        "\t\"operationId\": \"$3\",",
+        "\t\"responses\": {",
+        "\t\t\"200\": {",
+        "\t\t\t\"content\": {",
+        "\t\t\t\t\"application/json\": {",
+        "\t\t\t\t\t\"schema\": {",
+        "\t\t\t\t\t\t\"\\$ref\": \"$4\"",
+        "\t\t\t\t\t}",
+        "\t\t\t\t}",
+        "\t\t\t}",
+        "\t\t}",
+        "\t}",
+        "}"
+      ],
+      "description": "Create a Get Path Item Object"
+    },
+    "path POST": {
+      "prefix": "pathpost",
+      "body": [
+        "\"post\": {",
+        "\t\"tags\": [\"$1\"],",
+        "\t\"description\": \"$2\",",
+        "\t\"operationId\": \"$3\",",
+        "\t\"requestBody\": {",
+        "\t\t\"description\": \"$4\",",
+        "\t\t\"required\": true,",
+        "\t\t\"content\": {",
+        "\t\t\t\"application/json\": {",
+        "\t\t\t\t\"schema\": {",
+        "\t\t\t\t\t\"properties\": {",
+        "\t\t\t\t\t\t\"${5:PROPERTY}\": {",
+        "\t\t\t\t\t\t\t$6",
+        "\t\t\t\t\t\t}",
+        "\t\t\t\t\t}",
+        "\t\t\t\t}",
+        "\t\t\t}",
+        "\t\t}",
+        "\t},",
+        "\t\"responses\": {",
+        "\t\t\"201\": {",
+        "\t\t\t\"content\": {",
+        "\t\t\t\t\"application/json\": {",
+        "\t\t\t\t\t\"schema\": {",
+        "\t\t\t\t\t\t\"\\$ref\": \"$7\"",
+        "\t\t\t\t\t}",
+        "\t\t\t\t}",
+        "\t\t\t}",
+        "\t\t}",
+        "\t}",
+        "}"
+      ],
+      "description": "Create a Post Path Item Object"
+    },
+    "ref": {
+      "prefix": "ref",
+      "body": ["\"\\$ref\": \"$1\""],
+      "description": "JSON reference property"
+    }
+  }
+  
