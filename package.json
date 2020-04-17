@@ -17,6 +17,12 @@
                 "language": "json",
                 "path": "./snippets/snippets.json"
             }
+        ],
+        "jsonValidation": [
+            {
+                "fileMatch": "*-schema.json",
+                "url": "./schemas/schemaObject.json"
+            }
         ]
     }
 }
