@@ -9,6 +9,8 @@
     "categories": [
         "Snippets"
     ],
+    "publisher": "proohit",
+    "repository": {"type": "git", "url": "https://github.com/proohit/openapi-snippets"},
     "contributes": {
         "snippets": [
             {
