@@ -22,7 +22,12 @@
             {
                 "fileMatch": "*-schema.json",
                 "url": "./schemas/schemaObject.json"
+            },
+            {
+                "fileMatch": "*-path.json",
+                "url": "./schemas/pathObject.json"
             }
         ]
     }
 }
+
