@@ -40,3 +40,11 @@ or via VS Code Extension Manager (default shortcut: `CTRL+Shift+X`) and then sea
 ## Update
 
 As of now, the extension is not on VS Code Marketplace. So updating happens via uninstalling the old version and installing the updated version. You can install specific versions by uninstalling your version and installing the desired version.
+
+## Build
+
+For development/release, use [vsce - VS Code Extension CLI](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#vsce)
+
+```ssh
+vsce package
+```
