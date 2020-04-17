@@ -9,10 +9,13 @@ currently supported snippets:
 - `schemaObject`
 - `propertyObject`
 
-JSON files get validated according to their respective usage (e.g. Schema Objects). For schema specifications, see [OpenApi Specification v3 ](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/schemas/v3.0/schema.json)
+JSON files are being validated according to their respective usage (e.g. Schema Objects). For schema specifications, see [OpenApi Specification v3 ](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/schemas/v3.0/schema.json)
+
 For IntelliSense to validate the files, filenames have to match their respective schema:
-- schemaObject: *-schema.json
-- Path Item Object: *-path.json
+Object Type|filename
+--- |---
+schemaObject| \*-schema.json
+Path Item|\*-path.json
 
 You can navigate through predefined anchor points with TAB key. This only works right after inserting a snippet. 
 
