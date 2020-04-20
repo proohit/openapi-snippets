@@ -1,5 +1,5 @@
 {
-  "schema Object": {
+  "schemaObject": {
     "prefix": "schemaObject",
     "body": [
       "\"${TM_SELECTED_TEXT:${1:SCHEMANAME}}\": {",
@@ -14,7 +14,7 @@
       "}"
     ]
   },
-  "property Object": {
+  "propertyObject": {
     "prefix": "propertyObject",
     "body": [
       "\"${TM_SELECTED_TEXT:${1:PropertyName}}\": {",
@@ -24,7 +24,7 @@
       "}"
     ]
   },
-  "path GET": {
+  "pathget": {
     "prefix": "pathget",
     "body": [
       "\"get\": {",
@@ -46,7 +46,7 @@
     ],
     "description": "Create a Get Path Item Object"
   },
-  "path POST": {
+  "pathpost": {
     "prefix": "pathpost",
     "body": [
       "\"post\": {",
@@ -88,7 +88,7 @@
     "body": ["\"\\$ref\": \"$1\""],
     "description": "JSON reference property"
   },
-  "path PUT": {
+  "pathput": {
     "prefix": "pathput",
     "body": [
       "\"put\": {",

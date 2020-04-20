@@ -2,12 +2,17 @@
 
 ## Usage
 
+### snippets
+
 currently supported snippets:
+
 - `pathget`
 - `pathpost`
 - `pathput`
 - `schemaObject`
 - `propertyObject`
+
+### validation
 
 JSON files are being validated according to their respective usage (e.g. Schema Objects). For schema specifications, see [OpenApi Specification v3 ](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/schemas/v3.0/schema.json)
 
@@ -17,7 +22,25 @@ Object Type|filename
 schemaObject| \*-schema.json
 Path Item|\*-path.json
 
-You can navigate through predefined anchor points with TAB key. This only works right after inserting a snippet. 
+You can navigate through predefined anchor points with TAB key. This only works right after inserting a snippet.
+
+### keybindings
+
+You can configure custom keybindings for the snippets. For this, open the keybindings.json file of VS Code (Shortcut `Ctrl+K Ctrl+S`, then click on the `Open Keyboard Shortcuts (JSON)` button in the upper right corner).
+For any keybinding, use this template and edit the fields which are marked by `<<>>`:
+
+```json
+{
+  "key": "<<Your desired shortcut>>",
+  "command": "editor.action.insertSnippet",
+  "when": "editorTextFocus",
+  "args": {
+    "langId": "json",
+    "name": "<<Snippet prefix>>"
+  }
+}
+```
+For `name` you can use any [snippet prefix](#snippets).
 
 ## Install
 
