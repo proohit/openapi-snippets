@@ -9,6 +9,7 @@ currently supported snippets:
 - `pathget`
 - `pathpost`
 - `pathput`
+- `pathdelete`
 - `schemaObject`
 - `propertyObject`
 
