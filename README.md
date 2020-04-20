@@ -7,6 +7,7 @@
 currently supported snippets:
 
 - `pathget`
+- `pathgetparam`
 - `pathpost`
 - `pathput`
 - `pathdelete`
