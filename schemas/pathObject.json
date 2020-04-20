@@ -1,6 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "OpenApiSchemaObject",
-    "$ref": "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/schemas/v3.0/schema.json#/definitions/Paths"
-  }
-  
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "OpenApiPathObject",
+  "$ref": "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/schemas/v3.0/schema.json#/definitions/Paths"
+}
