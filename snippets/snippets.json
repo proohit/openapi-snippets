@@ -2,7 +2,7 @@
   "schema Object": {
     "prefix": "schemaObject",
     "body": [
-      "\"${1:SCHEMANAME}\": {",
+      "\"${TM_SELECTED_TEXT:${1:SCHEMANAME}}\": {",
       "\t\"title\": \"$2\",",
       "\t\"type\": \"$3\",",
       "\t\"description\": \"$4\",",
@@ -17,7 +17,7 @@
   "property Object": {
     "prefix": "propertyObject",
     "body": [
-      "\"${1:PropertyName}\": {",
+      "\"${TM_SELECTED_TEXT:${1:PropertyName}}\": {",
       "\t\"type\": \"$2\",",
       "\t\"description\": \"$3\",",
       "\t\"example\": \"$4\"",
