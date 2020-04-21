@@ -26,4 +26,4 @@ jobs:
         node-version: '10.x'
     - run: npm install
     - run: npx vsce package
-    - run: npx publish -p ${{secrets.PAT}}
+    - run: npx vsce publish -p ${{secrets.PAT}}
