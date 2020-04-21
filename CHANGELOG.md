@@ -1,8 +1,6 @@
 # Change Log
 
 All notable changes to the "openapi-snippets" extension will be documented in this file.
- 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 ## [Unreleased]
 
@@ -18,3 +16,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Validation of Schema and Path Item Objects. See [OpenApi Specification v3](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/schemas/v3.0/schema.json) for the referenced schema.
 - pathput snippet
+
+## [0.0.3] - 2020-04-21
+
+### Added
+
+- schemaObjects and propertyObjects can now be created from selected text
+- There is a guide on how to configure keybindings. Checkout [the Readme](./README.md#keybindings)
+- Added pathdelete snippet
+- added pathgetparam to insert a GET path with parameters
