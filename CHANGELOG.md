@@ -25,3 +25,10 @@ All notable changes to the "openapi-snippets" extension will be documented in th
 - There is a guide on how to configure keybindings. Checkout [the Readme](./README.md#keybindings)
 - Added pathdelete snippet
 - added pathgetparam to insert a GET path with parameters
+
+## [0.0.4] - 2020-04-21
+
+### Added
+
+- added pathdeleteparam to insert a DELETE path with parameters
+- added pathputparam to insert a PUT path with parameters

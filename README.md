@@ -10,7 +10,9 @@ currently supported snippets:
 - `pathgetparam`
 - `pathpost`
 - `pathput`
+- `pathputparam`
 - `pathdelete`
+- `pathdeleteparam`
 - `schemaObject`
 - `propertyObject`
 
