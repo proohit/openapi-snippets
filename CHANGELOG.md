@@ -32,3 +32,9 @@ All notable changes to the "openapi-snippets" extension will be documented in th
 
 - added pathdeleteparam to insert a DELETE path with parameters
 - added pathputparam to insert a PUT path with parameters
+
+## [0.0.5] - 2020-05-03
+
+### Modified
+
+- modified Readme
