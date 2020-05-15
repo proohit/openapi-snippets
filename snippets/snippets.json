@@ -7,9 +7,7 @@
       "\t\"type\": \"$3\",",
       "\t\"description\": \"$4\",",
       "\t\"properties\": {",
-      "\t\t\"${5:PROPERTY}\": {",
-      "\t\t\t$6",
-      "\t\t}",
+      "\t\t$5",
       "\t}",
       "}"
     ]
