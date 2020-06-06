@@ -53,3 +53,14 @@ All notable changes to the "openapi-snippets" extension will be documented in th
 ### Removed
 
 - default property in schemaObject
+
+## [0.0.7] - 2020-05-20
+
+### Added
+
+- support for yaml files
+- yaml validation
+
+### Removed
+
+- operationId properties from path schemas
