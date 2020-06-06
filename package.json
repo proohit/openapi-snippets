@@ -31,7 +31,24 @@
                 "fileMatch": "*-path.json",
                 "url": "./schemas/pathObject.json"
             }
-        ]
-    }
+    ],
+    "yamlValidation": [
+      {
+        "fileMatch": "*-schema.yaml",
+        "url": "./schemas/schemaObject.json"
+      },
+      {
+        "fileMatch": "*-path.yaml",
+        "url": "./schemas/pathObject.json"
+      },
+      {
+        "fileMatch": "*-schema.yml",
+        "url": "./schemas/schemaObject.json"
+      },
+      {
+        "fileMatch": "*-path.yml",
+        "url": "./schemas/pathObject.json"
+      }
+    ]
+  }
 }
-
