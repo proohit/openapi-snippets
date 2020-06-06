@@ -38,3 +38,18 @@ All notable changes to the "openapi-snippets" extension will be documented in th
 ### Modified
 
 - modified Readme
+
+## [0.0.6] - 2020-05
+
+### Modified
+
+- fixed pathputparam schema tabstop (were doubled)
+
+### Added
+
+- description to responses
+- Added ContentType snippet and integration into schemas
+
+### Removed
+
+- default property in schemaObject
