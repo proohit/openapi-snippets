@@ -16,6 +16,10 @@
             {
                 "language": "json",
                 "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "yaml",
+        "path": "./snippets/yaml-snippets.json"
             }
         ],
         "jsonValidation": [
