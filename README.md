@@ -29,8 +29,8 @@ JSON and YAML/YML files are being validated according to their respective usage 
 
 |          File name pattern | Example           |
 | -------------------------: | ----------------- |
-| `*-schema.(json|yaml|yml)` | users-schema.json |
-|   `*-path.(json|yaml|yml)` | users-path.json   |
+| `*-schema.(json,yaml,yml)` | users-schema.json |
+|   `*-path.(json,yaml,yml)` | users-path.json   |
 
 You can navigate through predefined anchor points with TAB key. This only works right after inserting a snippet.
 
