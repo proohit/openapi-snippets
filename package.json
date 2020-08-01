@@ -21,11 +21,19 @@
     "snippets": [
       {
         "language": "json",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/json-snippets.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/json-path-snippets.json"
       },
       {
         "language": "yaml",
         "path": "./snippets/yaml-snippets.json"
+      },
+      {
+        "language": "yaml",
+        "path": "./snippets/yaml-path-snippets.json"
       }
     ],
     "jsonValidation": [

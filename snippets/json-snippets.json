@@ -2,26 +2,26 @@
   "schemaObject": {
     "prefix": "schemaObject",
     "body": [
-      "${TM_SELECTED_TEXT:${1:SCHEMANAME}}:",
-      "  title: $2",
-      "  type: $3",
-      "  description: $4",
-      "  properties:",
-      "    $5"
+      "\"${TM_SELECTED_TEXT:${1:SCHEMANAME}}\": {",
+      "\t\"title\": \"$2\",",
+      "\t\"type\": \"$3\",",
+      "\t\"description\": \"$4\",",
+      "}"
     ]
   },
   "propertyObject": {
     "prefix": "propertyObject",
     "body": [
-      "${TM_SELECTED_TEXT:${1:PropertyName}}: ",
-      "  type: $2",
-      "  description: $3",
-      "  example: $4"
+      "\"${TM_SELECTED_TEXT:${1:PropertyName}}\": {",
+      "\t\"type\": \"$2\",",
+      "\t\"description\": \"$3\",",
+      "\t\"example\": \"$4\"",
+      "}"
     ]
   },
   "ref": {
     "prefix": "ref",
-    "body": ["\\$ref: $1"],
+    "body": ["\"\\$ref\": \"$1\""],
     "description": "JSON reference property"
   },
   "contentType": {
