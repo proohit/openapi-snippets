@@ -7,7 +7,8 @@
       "\t\"type\": \"$3\",",
       "\t\"description\": \"$4\",",
       "}"
-    ]
+    ],
+    "description": "Create a schema object"
   },
   "propertyObject": {
     "prefix": "propertyObject",
@@ -29,6 +30,6 @@
     "body": [
       "${1|application/json,application/xml,text/csv,application/gzip,text/html,image/jpeg,text/javascript,image/png,application/pdf,text/plain|}"
     ],
-    "description": ""
+    "description": "Several content types such as ´application/json´"
   }
 }
