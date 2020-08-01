@@ -28,7 +28,7 @@
   "contentType": {
     "prefix": "contentType",
     "body": [
-      "${1|application/json,application/xml,text/csv,application/gzip,text/html,image/jpeg,text/javascript,image/png,application/pdf,text/plain|}"
+      "\"${1|application/json,application/xml,text/csv,application/gzip,text/html,image/jpeg,text/javascript,image/png,application/pdf,text/plain|}\""
     ],
     "description": "Several content types such as ´application/json´"
   }
