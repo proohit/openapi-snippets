@@ -2,7 +2,7 @@
   "name": "openapi-snippets",
   "displayName": "OpenApi Snippets",
   "description": "Provides snippets for OpenApiSpecification in VS Code",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "engines": {
     "vscode": "^1.44.0"
   },
@@ -14,6 +14,9 @@
     "type": "git",
     "url": "https://github.com/proohit/openapi-snippets"
   },
+  "extensionDependencies": [
+    "redhat.vscode-yaml"
+  ],
   "contributes": {
     "snippets": [
       {

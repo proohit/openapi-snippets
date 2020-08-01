@@ -64,3 +64,10 @@ All notable changes to the "openapi-snippets" extension will be documented in th
 ### Removed
 
 - operationId properties from path schemas
+
+## [0.0.8] - 2020-07-15
+
+### Modified
+
+- path validation now ignores trailing slash for PathItems
+- added yaml extension dependency
