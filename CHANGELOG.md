@@ -71,3 +71,14 @@ All notable changes to the "openapi-snippets" extension will be documented in th
 
 - path validation now ignores trailing slash for PathItems
 - added yaml extension dependency
+
+## [0.0.9] - 2020-10-30
+
+### Modified
+
+- fixed json paths contentType snippet
+- updated descriptions for snippets
+
+### Added
+
+- validation for files inside specific folders without -schema or -path filename
