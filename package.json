@@ -38,29 +38,43 @@
     ],
     "jsonValidation": [
       {
-        "fileMatch": "*-schema.json",
+        "fileMatch": [
+          "/components/schemas/*.json",
+          "*-schema.json"
+        ],
         "url": "./schemas/schemaObject.json"
       },
       {
-        "fileMatch": "*-path.json",
+        "fileMatch": [
+          "/paths/*.json",
+          "*-path.json"
+        ],
         "url": "./schemas/pathObject.json"
       }
     ],
     "yamlValidation": [
       {
+        "fileMatch": "components/schemas/*.yaml",
+        "url": "./schemas/schemaObject.json"
+      },
+      {
         "fileMatch": "*-schema.yaml",
         "url": "./schemas/schemaObject.json"
       },
       {
-        "fileMatch": "*-path.yaml",
+        "fileMatch": "paths/*.yaml",
         "url": "./schemas/pathObject.json"
+      },
+      {
+        "fileMatch": "components/schemas/*.yml",
+        "url": "./schemas/schemaObject.json"
       },
       {
         "fileMatch": "*-schema.yml",
         "url": "./schemas/schemaObject.json"
       },
       {
-        "fileMatch": "*-path.yml",
+        "fileMatch": "paths/*.yml",
         "url": "./schemas/pathObject.json"
       }
     ]
