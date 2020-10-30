@@ -2,7 +2,7 @@
   "name": "openapi-snippets",
   "displayName": "OpenApi Snippets",
   "description": "Provides snippets for OpenApiSpecification in VS Code",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "engines": {
     "vscode": "^1.44.0"
   },
@@ -21,38 +21,60 @@
     "snippets": [
       {
         "language": "json",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/json-snippets.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/json-path-snippets.json"
       },
       {
         "language": "yaml",
         "path": "./snippets/yaml-snippets.json"
+      },
+      {
+        "language": "yaml",
+        "path": "./snippets/yaml-path-snippets.json"
       }
     ],
     "jsonValidation": [
       {
-        "fileMatch": "*-schema.json",
+        "fileMatch": [
+          "/components/schemas/*.json",
+          "*-schema.json"
+        ],
         "url": "./schemas/schemaObject.json"
       },
       {
-        "fileMatch": "*-path.json",
+        "fileMatch": [
+          "/paths/*.json",
+          "*-path.json"
+        ],
         "url": "./schemas/pathObject.json"
       }
     ],
     "yamlValidation": [
       {
+        "fileMatch": "components/schemas/*.yaml",
+        "url": "./schemas/schemaObject.json"
+      },
+      {
         "fileMatch": "*-schema.yaml",
         "url": "./schemas/schemaObject.json"
       },
       {
-        "fileMatch": "*-path.yaml",
+        "fileMatch": "paths/*.yaml",
         "url": "./schemas/pathObject.json"
+      },
+      {
+        "fileMatch": "components/schemas/*.yml",
+        "url": "./schemas/schemaObject.json"
       },
       {
         "fileMatch": "*-schema.yml",
         "url": "./schemas/schemaObject.json"
       },
       {
-        "fileMatch": "*-path.yml",
+        "fileMatch": "paths/*.yml",
         "url": "./schemas/pathObject.json"
       }
     ]

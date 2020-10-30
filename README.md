@@ -2,34 +2,39 @@
 
 ## Usage
 
+![snippet-preview](./openapi-snippets-preview.gif)
+
 ### snippets
 
 currently supported snippets:
 
-- `pathget`
-- `pathgetparam`
-- `pathpost`
-- `pathput`
-- `pathputparam`
-- `pathdelete`
-- `pathdeleteparam`
-- `schemaObject`
-- `propertyObject`
-- `contentType`
+|            Prefix | Content                                    |
+| ----------------: | ------------------------------------------ |
+|         `pathget` | GET path object                            |
+|    `pathgetparam` | GET path object with request parameters    |
+|        `pathpost` | POST path object                           |
+|         `pathput` | PUT path object                            |
+|    `pathputparam` | PUT path object with request parameters    |
+|      `pathdelete` | DELETE path object                         |
+| `pathdeleteparam` | DELETE path object with request parameters |
+|    `schemaObject` | Schema object                              |
+|  `propertyObject` | Property object for properties of a schema |
+|     `contentType` | Several content types                      |
 
 ### Validation
 
-:warning: For YAML/YML files to be supported, the [YAML Extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) has to be installed!
-
 JSON and YAML/YML files are being validated according to their respective usage (e.g. Schema Objects). For schema specifications, see [OpenApi Specification v3](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/schemas/v3.0/schema.json)
 
-:information_source: For IntelliSense to validate the files, filenames have to match their respective schema:
+**Note**: For IntelliSense to validate the files, filenames have to match their respective schema:
 
-- schemaObject - `*-schema.(json|yaml|yml)`, e.g. `users-schema.json`
-
-- Path Item - `*-path.(json|yaml|yml)`, e.g. `users-path.json`
+|       File name pattern | Example                     |
+| ----------------------: | --------------------------- |
+| `[components/schemas/\* | \*-schema].(json,yaml,yml)` | components/schemas/users.json |
+|              `[paths/\* | \*-path].(json,yaml,yml)`   | users-path.json |
 
 You can navigate through predefined anchor points with TAB key. This only works right after inserting a snippet.
+
+**Note**: For YAML/YML files to be supported, the [YAML Extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) has to be installed!
 
 ### Keybindings
 

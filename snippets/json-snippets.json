@@ -1,0 +1,35 @@
+{
+  "schemaObject": {
+    "prefix": "schemaObject",
+    "body": [
+      "\"${TM_SELECTED_TEXT:${1:SCHEMANAME}}\": {",
+      "\t\"title\": \"$2\",",
+      "\t\"type\": \"$3\",",
+      "\t\"description\": \"$4\",",
+      "}"
+    ],
+    "description": "Create a schema object"
+  },
+  "propertyObject": {
+    "prefix": "propertyObject",
+    "body": [
+      "\"${TM_SELECTED_TEXT:${1:PropertyName}}\": {",
+      "\t\"type\": \"$2\",",
+      "\t\"description\": \"$3\",",
+      "\t\"example\": \"$4\"",
+      "}"
+    ]
+  },
+  "ref": {
+    "prefix": "ref",
+    "body": ["\"\\$ref\": \"$1\""],
+    "description": "JSON reference property"
+  },
+  "contentType": {
+    "prefix": "contentType",
+    "body": [
+      "\"${1|application/json,application/xml,text/csv,application/gzip,text/html,image/jpeg,text/javascript,image/png,application/pdf,text/plain|}\""
+    ],
+    "description": "Several content types such as ´application/json´"
+  }
+}

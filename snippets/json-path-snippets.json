@@ -1,24 +1,4 @@
 {
-  "schemaObject": {
-    "prefix": "schemaObject",
-    "body": [
-      "\"${TM_SELECTED_TEXT:${1:SCHEMANAME}}\": {",
-      "\t\"title\": \"$2\",",
-      "\t\"type\": \"$3\",",
-      "\t\"description\": \"$4\",",
-      "}"
-    ]
-  },
-  "propertyObject": {
-    "prefix": "propertyObject",
-    "body": [
-      "\"${TM_SELECTED_TEXT:${1:PropertyName}}\": {",
-      "\t\"type\": \"$2\",",
-      "\t\"description\": \"$3\",",
-      "\t\"example\": \"$4\"",
-      "}"
-    ]
-  },
   "pathget": {
     "prefix": "pathget",
     "body": [
@@ -29,7 +9,7 @@
       "\t\t\"200\": {",
       "\t\t\t\"description\": \"${3:OK}\",",
       "\t\t\t\"content\": {",
-      "\t\t\t\t\"${4:contentType }\": {",
+      "\t\t\t\t${4:contentType}: {",
       "\t\t\t\t\t\"schema\": {",
       "\t\t\t\t\t\t\"\\$ref\": \"$5\"",
       "\t\t\t\t\t}",
@@ -41,7 +21,6 @@
     ],
     "description": "Create a Get Path Item Object"
   },
-
   "pathgetparam": {
     "prefix": "pathgetparam",
     "body": [
@@ -64,7 +43,7 @@
       "\t\t\"200\": {",
       "\t\t\t\"description\": \"${8:OK}\",",
       "\t\t\t\"content\": {",
-      "\t\t\t\t\"${9:contentType }\": {",
+      "\t\t\t\t${9:contentType}: {",
       "\t\t\t\t\t\"schema\": {",
       "\t\t\t\t\t\t\"\\$ref\": \"$10\"",
       "\t\t\t\t\t}",
@@ -86,7 +65,7 @@
       "\t\t\"description\": \"$3\",",
       "\t\t\"required\": true,",
       "\t\t\"content\": {",
-      "\t\t\t\"${4:contentType }\": {",
+      "\t\t\t${4:contentType}: {",
       "\t\t\t\t\"schema\": {",
       "\t\t\t\t\t\"properties\": {",
       "\t\t\t\t\t\t$5",
@@ -99,7 +78,7 @@
       "\t\t\"201\": {",
       "\t\t\t\"description\": \"${6:OK}\",",
       "\t\t\t\"content\": {",
-      "\t\t\t\t\"${7:contentType }\": {",
+      "\t\t\t\t${7:contentType}: {",
       "\t\t\t\t\t\"schema\": {",
       "\t\t\t\t\t\t\"\\$ref\": \"$8\"",
       "\t\t\t\t\t}",
@@ -111,11 +90,6 @@
     ],
     "description": "Create a Post Path Item Object"
   },
-  "ref": {
-    "prefix": "ref",
-    "body": ["\"\\$ref\": \"$1\""],
-    "description": "JSON reference property"
-  },
   "pathput": {
     "prefix": "pathput",
     "body": [
@@ -126,7 +100,7 @@
       "\t\t\"description\": \"$3\",",
       "\t\t\"required\": true,",
       "\t\t\"content\": {",
-      "\t\t\t\"${4:contentType }\": {",
+      "\t\t\t${4:contentType}: {",
       "\t\t\t\t\"schema\": {",
       "\t\t\t\t\t\"properties\": {",
       "\t\t\t\t\t\t$5",
@@ -139,7 +113,7 @@
       "\t\t\"200\": {",
       "\t\t\t\"description\": \"${6:OK}\",",
       "\t\t\t\"content\": {",
-      "\t\t\t\t\"${7:contentType }\": {",
+      "\t\t\t\t${7:contentType}: {",
       "\t\t\t\t\t\"schema\": {",
       "\t\t\t\t\t\t\"\\$ref\": \"$8\"",
       "\t\t\t\t\t}",
@@ -150,13 +124,6 @@
       "}"
     ],
     "description": "Create a Put Path Item Object"
-  },
-  "contentType": {
-    "prefix": "contentType",
-    "body": [
-      "${1|application/json,application/xml,text/csv,application/gzip,text/html,image/jpeg,text/javascript,image/png,application/pdf,text/plain|}"
-    ],
-    "description": ""
   },
   "pathputparam": {
     "prefix": "pathputparam",
@@ -180,7 +147,7 @@
       "\t\t\"description\": \"$8\",",
       "\t\t\"required\": true,",
       "\t\t\"content\": {",
-      "\t\t\t\"${9:contentType }\": {",
+      "\t\t\t${9:contentType}: {",
       "\t\t\t\t\"schema\": {",
       "\t\t\t\t\t\"properties\": {",
       "\t\t\t\t\t\t$10",
@@ -193,7 +160,7 @@
       "\t\t\"200\": {",
       "\t\t\t\"description\": \"${11:OK}\",",
       "\t\t\t\"content\": {",
-      "\t\t\t\t\"${12:contentType }\": {",
+      "\t\t\t\t${12:contentType}: {",
       "\t\t\t\t\t\"schema\": {",
       "\t\t\t\t\t\t\"\\$ref\": \"$13\"",
       "\t\t\t\t\t}",
@@ -215,7 +182,7 @@
       "\t\t\"description\": \"$3\",",
       "\t\t\"required\": true,",
       "\t\t\"content\": {",
-      "\t\t\t\"${4:contentType }\": {",
+      "\t\t\t${4:contentType}: {",
       "\t\t\t\t\"schema\": {",
       "\t\t\t\t\t\"properties\": {",
       "\t\t\t\t\t\t$5",
@@ -228,7 +195,7 @@
       "\t\t\"200\": {",
       "\t\t\t\"description\": \"${6:OK}\",",
       "\t\t\t\"content\": {",
-      "\t\t\t\t\"${7:contentType }\": {",
+      "\t\t\t\t${7:contentType}: {",
       "\t\t\t\t\t\"schema\": {",
       "\t\t\t\t\t\t\"\\$ref\": \"$8\"",
       "\t\t\t\t\t}",
@@ -262,7 +229,7 @@
       "\t\t\"200\": {",
       "\t\t\t\"description\": \"${8:OK}\",",
       "\t\t\t\"content\": {",
-      "\t\t\t\t\"${9:contentType }\": {",
+      "\t\t\t\t${9:contentType}: {",
       "\t\t\t\t\t\"schema\": {",
       "\t\t\t\t\t\t\"\\$ref\": \"$10\"",
       "\t\t\t\t\t}",
