@@ -82,3 +82,4 @@ All notable changes to the "openapi-snippets" extension will be documented in th
 ### Added
 
 - validation for files inside specific folders without -schema or -path filename
+- preview gif
