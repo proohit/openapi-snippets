@@ -27,10 +27,10 @@ JSON and YAML/YML files are being validated according to their respective usage 
 
 **Note**: For IntelliSense to validate the files, filenames have to match their respective schema:
 
-|       File name pattern | Example                     |
-| ----------------------: | --------------------------- |
-| `[components/schemas/\* | \*-schema].(json,yaml,yml)` | components/schemas/users.json |
-|              `[paths/\* | \*-path].(json,yaml,yml)`   | users-path.json |
+|                                    File name pattern | Example                       |
+| ---------------------------------------------------: | ----------------------------- |
+| `[components/schemas/* \| *-schema].[json,yaml,yml]` | components/schemas/users.json |
+|                `[paths/* \| *-path].[json,yaml,yml]` | users-path.json               |
 
 You can navigate through predefined anchor points with TAB key. This only works right after inserting a snippet.
 
